@@ -10,6 +10,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
 import ua.alexshent.crm.service.UserService;
 
 // https://www.rfc-editor.org/rfc/rfc7519
@@ -37,11 +40,40 @@ public class SecurityConfiguration {
     }
 
     @Bean
+    public CorsFilter corsFilter() {
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+        //config.setAllowCredentials(true);
+        config.addAllowedOrigin("*");
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+        source.registerCorsConfiguration("/**", config);
+        return new CorsFilter(source);
+    }
+
+    @Bean
     public SecurityFilterChain filterChain(HttpSecurity security, SecurityProperties securityProperties) throws Exception {
         security.csrf().disable();
+        security.cors();
         security.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         security.authorizeRequests().antMatchers(securityProperties.getLoginPath(), securityProperties.getRefreshTokenPath()).permitAll();
-        security.authorizeRequests().antMatchers(HttpMethod.GET, "/api/employee/*").hasAnyAuthority("user");
+
+        final String employeeControllerUrl = "/api/employee";
+        security.authorizeRequests().antMatchers(HttpMethod.GET, employeeControllerUrl)
+                .hasAnyAuthority(SecurityProperties.ROLE_USER, SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
+        security.authorizeRequests().antMatchers(HttpMethod.POST, employeeControllerUrl)
+                .hasAnyAuthority(SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
+        security.authorizeRequests().antMatchers(HttpMethod.DELETE, employeeControllerUrl)
+                .hasAuthority(SecurityProperties.ROLE_ADMIN);
+
+        final String enumerationControllerUrl = "/api/enumeration";
+        security.authorizeRequests().antMatchers(HttpMethod.GET, enumerationControllerUrl)
+                .hasAnyAuthority(SecurityProperties.ROLE_USER, SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
+        security.authorizeRequests().antMatchers(HttpMethod.POST, enumerationControllerUrl)
+                .hasAnyAuthority(SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
+        security.authorizeRequests().antMatchers(HttpMethod.DELETE, enumerationControllerUrl)
+                .hasAuthority(SecurityProperties.ROLE_ADMIN);
+
         security.authorizeRequests().anyRequest().authenticated();
         security.apply(new CustomDsl(securityProperties));
         return security.build();
