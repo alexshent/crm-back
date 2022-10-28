@@ -1,8 +1,6 @@
 package ua.alexshent.crm.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import ua.alexshent.crm.controller.serializer.EmployeeSerializer;
 import ua.alexshent.crm.model.embeddable.Address;
 import ua.alexshent.crm.model.embeddable.TelephoneNumber;
 import ua.alexshent.crm.model.enumeration.Department;
@@ -14,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-//@JsonSerialize(using = EmployeeSerializer.class)
 @Entity
 public class Employee {
     @Id
