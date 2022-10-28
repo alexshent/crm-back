@@ -43,7 +43,6 @@ public class SecurityConfiguration {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        //config.setAllowCredentials(true);
         config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
@@ -63,6 +62,8 @@ public class SecurityConfiguration {
                 .hasAnyAuthority(SecurityProperties.ROLE_USER, SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
         security.authorizeRequests().antMatchers(HttpMethod.POST, employeeControllerUrl)
                 .hasAnyAuthority(SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
+        security.authorizeRequests().antMatchers(HttpMethod.PUT, employeeControllerUrl)
+                .hasAnyAuthority(SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
         security.authorizeRequests().antMatchers(HttpMethod.DELETE, employeeControllerUrl)
                 .hasAuthority(SecurityProperties.ROLE_ADMIN);
 
@@ -70,6 +71,8 @@ public class SecurityConfiguration {
         security.authorizeRequests().antMatchers(HttpMethod.GET, enumerationControllerUrl)
                 .hasAnyAuthority(SecurityProperties.ROLE_USER, SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
         security.authorizeRequests().antMatchers(HttpMethod.POST, enumerationControllerUrl)
+                .hasAnyAuthority(SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
+        security.authorizeRequests().antMatchers(HttpMethod.PUT, enumerationControllerUrl)
                 .hasAnyAuthority(SecurityProperties.ROLE_MANAGER, SecurityProperties.ROLE_ADMIN);
         security.authorizeRequests().antMatchers(HttpMethod.DELETE, enumerationControllerUrl)
                 .hasAuthority(SecurityProperties.ROLE_ADMIN);
