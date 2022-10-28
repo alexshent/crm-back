@@ -26,6 +26,11 @@ public class EmployeeController {
         employeeService.create(employee);
     }
 
+    @PutMapping("/employee")
+    public void update(@RequestBody Employee employee) {
+        employeeService.update(employee);
+    }
+
     @DeleteMapping("/employee")
     public void delete(@RequestBody List<UUID> ids) {
         employeeService.deleteById(ids);
