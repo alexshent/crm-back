@@ -8,6 +8,8 @@ public class EntitiesPage<T> {
 
     private long total;
 
+    private int pageSize;
+
     public List<T> getEntities() {
         return entities;
     }
@@ -22,5 +24,13 @@ public class EntitiesPage<T> {
 
     public void setTotal(long total) {
         this.total = total;
+    }
+
+    public int getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
     }
 }

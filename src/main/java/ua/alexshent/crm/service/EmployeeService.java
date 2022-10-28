@@ -49,6 +49,7 @@ public class EmployeeService implements EntityService<Employee> {
         EntitiesPage<Employee> entitiesPage = new EntitiesPage<>();
         entitiesPage.setEntities(page.getContent());
         entitiesPage.setTotal(page.getTotalElements());
+        entitiesPage.setPageSize(pageSize);
         return entitiesPage;
     }
 
