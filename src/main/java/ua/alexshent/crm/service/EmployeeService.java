@@ -42,7 +42,8 @@ public class EmployeeService implements EntityService<Employee> {
         if (pageNumber <= 0) {
             throw new IllegalArgumentException("page number must be >= 1");
         }
-        int pageSize = Integer.parseInt(environment.getProperty("ua.alexshent.crm.pageSize", "5"));
+        final String pageSizeDefaultValue = "10";
+        int pageSize = Integer.parseInt(environment.getProperty("ua.alexshent.crm.pageSize", pageSizeDefaultValue));
         Pageable pageable = PageRequest.of(pageNumber - 1, pageSize, Sort.by("created").descending());
         Page<Employee> page = employeeRepository.findAll(pageable);
 
