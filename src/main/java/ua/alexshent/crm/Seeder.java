@@ -308,6 +308,492 @@ public class Seeder {
         workerEmployee.setReportsTo(bossEmployee);
 
         employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Glenn");
+        workerEmployee.setLastName("Wesson");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("On Leave"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("glenn@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Hanna");
+        workerEmployee.setLastName("Bergman");
+        workerEmployee.setJobTitle("Cook");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("hanna@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Mike");
+        workerEmployee.setLastName("Brown");
+        workerEmployee.setJobTitle("Painter");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("mike@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Elise");
+        workerEmployee.setLastName("Mccann");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("elise@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Aiden");
+        workerEmployee.setLastName("Berger");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("aiden@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Anna");
+        workerEmployee.setLastName("Chan");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("anna@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Callie");
+        workerEmployee.setLastName("Krueger");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("On Leave"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("callie@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Heather");
+        workerEmployee.setLastName("Hutchinson");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("heather@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Jane");
+        workerEmployee.setLastName("Callahan");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes("No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("jane@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Ria");
+        workerEmployee.setLastName("Durham");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("ria@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Ella");
+        workerEmployee.setLastName("Fields");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("On Leave"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("ella@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Halima");
+        workerEmployee.setLastName("Hendricks");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("halima@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Curtis");
+        workerEmployee.setLastName("Andrews");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("curtis@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Luke");
+        workerEmployee.setLastName("Barlow");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("luke@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Ellis");
+        workerEmployee.setLastName("Morrow");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("ellis@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Owen");
+        workerEmployee.setLastName("Frazier");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes(":)");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("On Leave"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("owen@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Nicolas");
+        workerEmployee.setLastName("Reese");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes("But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("nicolas@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
+
+        // ------------------------
+
+        workerEmployee = new Employee();
+        workerEmployee.setFirstName("Fred");
+        workerEmployee.setLastName("Mendoza");
+        workerEmployee.setJobTitle("Worker");
+        workerEmployee.setDepartment(enumerationCache.getDepartments().get("Department 1"));
+        workerEmployee.setNotes("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?");
+        workerEmployee.setStatus(enumerationCache.getEmployeeStatuses().get("Active"));
+
+        telephoneNumberBuilder.withNumber("1234567");
+        workerEmployee.setOfficePhone(telephoneNumberBuilder.build());
+
+        telephoneNumberBuilder.withNumber("876654333");
+        workerEmployee.setMobilePhone(telephoneNumberBuilder.build());
+
+        emailAddressBuilder.withEmail("fred@mycompany.com");
+        workerEmployee.setPrimaryEmail(emailAddressBuilder.build());
+
+        addressBuilder.withCountry("Ukraine").withState("Kyiv").withCity("Kyiv").withStreet("Azovska street, 15")
+                .withPostalCode("03037");
+        workerEmployee.setPrimaryAddress(addressBuilder.build());
+
+        workerEmployee.setReportsTo(bossEmployee);
+
+        employeeRepository.save(workerEmployee);
     }
 
     void createEnumerations() {
